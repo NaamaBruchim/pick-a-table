@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pick-a-table</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+
+<body style="background-color:darkseagreen">
+    <h2 style="text-align:center; font-style: italic; font-size: 60px; background-color:darksalmon;">Pick a Table</h2>
+
+    <table>
+        <thead style="font-size: 20px;background-color: darksalmon;">
+            <tr>
+                <th>Restaurant</th>
+                <th>Menu</th>
+                <th>City</th>
+                <th>Map</th>
+                <th>Cost</th>
+                <th>Pick a Table</th>
+            </tr>
+        </thead>
+
+        <tbody style="text-align:center;">
+
+            <tr>
+                <td><img src="img/taizu.jpeg" alt="taizu-logo"></td>
+                <td>
+                    <a href="https://www.taizu.co.il/menu/">www.taizu.co.il/menu</a>
+                </td>
+                <td><strong>Tel Aviv</strong> </td>
+                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.1994391980093!2d34.78207788457512!3d32.06385408119321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b7b7bc1dc6b%3A0x58538d252ddc7640!2z15jXkNeZ15bXlQ!5e0!3m2!1siw!2sil!4v1670243065610!5m2!1siw!2sil"
+                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                <td>&#36;&#36;&#36;&#36;</td>
+                <td>
+                    <form action="https://formspree.io/f/mgeqgayo" method="POST" target="_blank">
+                        Date:
+                        <input type="date" name="date" value="2023-01-01"><br> First Name:
+                        <br> <input type="text" name="first-name"><br> Sure Name:
+                        <br>
+                        <input type="text" name="last-name"><br> Gender:
+                        <input type="radio" id="male" name="gender"><input type="radio" id="female" name="gender"><br>
+
+                        <label for="guest">Number of Guests:</label>
+                        <br>
+                        <input list="guests" name="guest" id="guest">
+                        <datalist id="guests">
+                            <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                              </datalist>
+
+                        <br> Email: <br>
+                        <input type="email" id="email" name="email" required><br>
+                        <br>
+                        <button style="background-color:darksalmon; font-size: 18px;">Pick a Table!</button>
+
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="img/claro.jpg" alt="claro-logo"></td>
+                <td>
+                    <a href="//www.clarotlv.com/">www.clarotlv.com</a>
+                </td>
+                <td><strong>Tel Aviv</strong></td>
+                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.693981628126!2d34.789393819272775!3d32.070550973782055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b9daa2d7747%3A0x47148ab616da3356!2z16fXnNeQ16jXlQ!5e0!3m2!1siw!2sil!4v1670243144439!5m2!1siw!2sil"
+                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                <td>&#36;&#36;&#36;&#36;</td>
+                <td>
+                    <form action="https://formspree.io/f/mgeqgayo" method="POST" target="_blank">
+                        Date:
+                        <input type="date" name="date" value="2023-01-01"><br><br> Full Name: <br>
+                        <input type="text" name="user-name">
+                        <br>
+                        <label for="guest">Number of Guests:</label>
+                        <br>
+                        <input list="guests" name="guest" id="guest">
+                        <datalist id="guests">
+                            <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                              </datalist>
+
+                        <br> Email: <br>
+                        <input type="email" id="email" name="email"><br>
+                        <br>
+                        <button style="background-color:darksalmon; font-size: 18px;">Pick a Table!
+                </td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
